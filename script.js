@@ -30,7 +30,7 @@ Promise.all(promises).then((results)=>{
 
 		row.innerHTML=`
 			<td>Promise ${index+1}</td>
-			<td>${time.toFixed(3)}</td>
+			<td>${time}</td>
 		`;
 
 		output.appendChild(row);
