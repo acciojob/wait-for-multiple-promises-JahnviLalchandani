@@ -20,7 +20,7 @@ const promises=[
 ]
 
 Promise.all(promises).then((results)=>{
-	const totalTime=(performance.now()-startTime)/1000;
+	const totalTime=Math.max(...results)
 
 	output.innerHTML="";
 
